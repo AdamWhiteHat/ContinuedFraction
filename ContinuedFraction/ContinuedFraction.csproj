@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net45;net46;net48;netstandard2.1;netcoreapp3.1;net5.0;net6.0;net7.0
+		</TargetFrameworks>
+		<Platforms>AnyCPU</Platforms>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Title>ExtendedNumerics.ContinuedFraction</Title>
+		<Product>ExtendedNumerics.ContinuedFraction</Product>
+		<AssemblyName>ExtendedNumerics.ContinuedFraction</AssemblyName>
+		<AssemblyTitle>ExtendedNumerics.ContinuedFraction</AssemblyTitle>
+		<PackageId>ExtendedNumerics.ContinuedFraction</PackageId>
+		<Description>A continued fraction arithmetic class library.</Description>
+		<Authors>Adam White</Authors>
+		<Company>Adam White</Company>
+		<Copyright>Made by Adam White</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageTags>math mathematics continued-fraction rationals reals irrationals fractions arithmetic arbitrary-precision numerics numbers biginteger csharp</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://www.nuget.org/packages/ExtendedNumerics.ContinuedFraction/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/AdamWhiteHat/ContinuedFraction</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		
+		<Version>$([System.DateTime]::Now.ToString("yyyy."$([System.DateTime]::Now.DayOfYear)".HHmm"))</Version>
+		<AssemblyVersion>$([System.DateTime]::Now.ToString("yyyy."$([System.DateTime]::Now.DayOfYear)".HHmm"))</AssemblyVersion>
+		<FileVersion>$([System.DateTime]::Now.ToString("yyyy."$([System.DateTime]::Now.DayOfYear)".HHmm"))</FileVersion>
+		
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="ExtendedNumerics.BigDecimal" Version="2023.121.1953" />
+	  <PackageReference Include="ExtendedNumerics.BigRational" Version="2023.122.547" />
+	</ItemGroup>
+
+</Project>
